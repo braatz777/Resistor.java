@@ -13,11 +13,6 @@ public class Main {
             System.out.println("4 - R2");
             System.out.print("Escolha:");
             String op = sc.next();
-            Double vin;
-            Double vout;
-            Double r1;
-            Double r2;
-            Double a;
 
             switch (op) {
                 case "0":
@@ -36,6 +31,25 @@ public class Main {
                     break;
 
                 case "4":
+                    Op.R2();
+                    break;
+
+                case "Out":
+                    System.exit(0);
+
+                case "Vin":
+                    Op.Vin();
+                    break;
+
+                case "Vout":
+                    Op.Vout();
+                    break;
+
+                case "R1":
+                    Op.R1();
+                    break;
+
+                case "R2":
                     Op.R2();
                     break;
             }
